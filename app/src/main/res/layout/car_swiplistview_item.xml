@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relative"
+    >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/addcardown_day"
+        android:scaleType="fitXY"
+        android:tag="skin:addcardown:src"
+       />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="3dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="22dp">
+        <ImageView
+            android:id="@+id/image_MycarLogo"
+            android:layout_width="60dp"
+            android:layout_height="18dp"
+            android:src="@drawable/aodi"
+            android:layout_marginLeft="25dp"
+            android:layout_marginBottom="1dp"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="14dp"/>
+        <TextView
+            android:id="@+id/textView_car_name"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+           android:layout_marginTop="14dp"
+            android:singleLine="true"
+            android:text="奥迪A6L     黑"
+            android:tag="skin:textColor2:textColor"
+            android:textColor="#000"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/textView_car_sate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:text="审核已通过"
+            android:tag="skin:textColor18:textColor"
+            android:singleLine="true"
+            android:textColor="#a3782f"
+            android:textSize="15sp"
+            android:layout_marginTop="14dp"/>
+        <ImageView
+            android:id="@+id/image_amend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/alter"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="8dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView_driv"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:src="@drawable/drivelcard"
+            android:scaleType="fitXY"
+            />
+
+        <ImageView
+            android:id="@+id/imageView_peop"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/identitycard"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView_car_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="15dp"
+       android:layout_marginTop="8dp"
+        android:paddingBottom="12dp"
+        android:singleLine="true"
+        android:textSize="12sp"
+        android:text="已通过审核"
+        android:textColor="#828280" />
+    </LinearLayout>
+</RelativeLayout>

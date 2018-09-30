@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.administrator.myhaicar"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <!-- Required -->
+    <permission
+        android:name="${applicationId}.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- Required -->
+    <uses-permission android:name="${applicationId}.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 有萌分享 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <!-- 往SDCard写入数据权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 从SDCard读取数据权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 支付宝 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".commond.MyAPP"
+        android:allowBackup="true"
+        android:icon="@drawable/appicon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".main.order.This.Acticity.OrderActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".main.mine.Account.This.Acticity.AccountActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/otherPageStyle" />
+        <activity
+            android:name=".main.login.Guide.Acticity.WelcomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".main.login.This.Acticity.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".main.mine.Account.VIP.Acticity.OpenVipActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/otherPageStyle" />
+        <activity
+            android:name=".main.mine.Account.VIP.Acticity.OpenVipSucceedActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/otherPageStyle" />
+        <activity
+            android:name=".main.login.Guide.Acticity.GuideActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".main.order.SubmitCash.Acticity.CityActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/otherPageStyle" />
+        <activity android:name=".main.order.SubmitCash.Acticity.CityNextActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/otherPageStyle"></activity>
+        <activity
+            android:name=".main.mine.Account.MineDetail.MineDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".main.mine.Account.MineDetail.ShareIdActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/otherPageStyle" />
+        <activity
+            android:name=".main.mine.Account.MineDetail.NewPhoneLoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/otherPageStyle" />
+        <activity
+            android:name=".main.mine.Account.MineDetail.NewPhoneNextActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/otherPageStyle" />
+        <activity
+            android:name=".main.mine.Account.MineDetail.NewPhoneSucceedActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/otherPageStyle" />
+        <activity
+            android:name=".main.mine.Account.MineDetail.AddressActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/otherPageStyle" />
+        <activity
+            android:name=".main.mine.Account.MineDetail.AgeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/otherPageStyle" />
+        <activity
+            android:name=".main.mine.Account.MineDetail.JobsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/otherPageStyle" />
+        <activity
+            android:name=".main.mine.Account.MineDetail.NameActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/otherPageStyle" />
+        <activity
+            android:name=".main.mine.Account.OrderCash.OrderCashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/otherPageStyle" />
+        <activity
+            android:name=".main.mine.Account.OrderCash.HaiCarHintActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/otherPageStyle" />
+        <activity
+            android:name=".main.mine.Account.OrderCash.OrderDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/otherPageStyle" />
+        <activity
+            android:name=".main.mine.Account.OrderCash.CommonProblemActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/otherPageStyle" />
+        <activity
+            android:name=".main.mine.Account.Transaction.TransactionActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/otherPageStyle" />
+        <activity
+            android:name=".main.mine.Account.MineDetail.ChooseCityActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/otherPageStyle" />
+        <activity
+            android:name=".main.mine.Account.MineDetail.ChooseNextCityActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/otherPageStyle" />
+        <activity
+            android:name=".main.mine.Account.MineDetail.DistrictActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/otherPageStyle" />
+        <activity
+            android:name=".main.mine.Account.RedBag.RedBagActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".main.mine.Account.MineDetail.DetailsActivity"
+            android:theme="@style/otherPageStyle" />
+        <activity
+            android:name=".main.mine.Account.MineDetail.DetailsNextActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/otherPageStyle" />
+        <activity
+            android:name=".main.mine.MyOrder.Acticity.MyOrderActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/otherPageStyle" />
+        <activity
+            android:name=".main.mine.MyOrder.Acticity.HistoryRecordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/otherPageStyle" />
+        <activity
+            android:name=".main.mine.MyCar.Acticity.MyCarActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/otherPageStyle" />
+        <activity
+            android:name=".main.mine.MyCar.Acticity.CarColorsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/otherPageStyle" />
+        <activity
+            android:name=".main.mine.MyCar.Acticity.CarNameActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/otherPageStyle" />
+        <activity
+            android:name=".main.mine.MyCar.Acticity.CarTypeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/otherPageStyle" />
+        <activity
+            android:name=".main.mine.MyCar.Acticity.CarPhotoActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.administrator.myhaicar.Fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name=".main.mine.MyCar.Acticity.CarTeamActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/otherPageStyle" />
+        <activity
+            android:name=".main.mine.Account.This.Acticity.WithDrawActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/otherPageStyle" />
+        <activity
+            android:name=".main.mine.Account.This.Acticity.BankActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/otherPageStyle" />
+        <activity
+            android:name=".main.mine.Account.This.Acticity.DrawSucceedActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/otherPageStyle" />
+        <activity
+            android:name=".main.mine.Setting.SettingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/otherPageStyle" />
+        <activity
+            android:name=".main.mine.Setting.DisclaimerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/otherPageStyle" />
+        <activity
+            android:name=".main.mine.Setting.NewFeatureActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/otherPageStyle" />
+        <activity
+            android:name=".main.mine.Event.Acticity.WelfareActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/otherPageStyle" />
+        <activity
+            android:name=".main.mine.Event.Acticity.MyWelfareActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/otherPageStyle" />
+        <activity
+            android:name=".main.mine.Event.Acticity.WelfareDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/otherPageStyle" />
+        <activity
+            android:name=".main.mine.Business.Acticity.BusinessActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/otherPageStyle" />
+        <activity
+            android:name=".main.mine.Setting.BondIDActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/otherPageStyle" />
+        <activity
+            android:name=".main.order.SubmitCash.Acticity.InfomationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/otherPageStyle" />
+        <activity
+            android:name=".main.order.SubmitCash.Acticity.InforDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/otherPageStyle" />
+        <activity
+            android:name=".main.login.Guide.Acticity.StatementActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/otherPageStyle" />
+        <activity
+            android:name=".main.mine.Setting.AboutUsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/otherPageStyle" />
+        <activity
+            android:name=".main.mine.MyCar.Acticity.TeamDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/otherPageStyle" />
+        <activity
+            android:name=".main.mine.Business.Acticity.BusDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/otherPageStyle" />
+
+        <activity
+            android:name=".main.mine.Event.Acticity.ApplyActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@style/otherPageStyle">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="wx1876d6c050b3bb22" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".main.order.SubmitCash.Acticity.MarginActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@style/otherPageStyle">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="wx1876d6c050b3bb22" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".main.mine.Event.Acticity.MyWelDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/otherPageStyle" />
+        <!-- 支付宝 -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" />
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" />
+        <!-- //微信支付 -->
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" />
+
+        <receiver android:name=".main.order.weipay.AppRegister">
+            <intent-filter>
+                <action android:name="com.tencent.mm.plugin.openapi.Intent.ACTION_REFRESH_WXAPP" />
+            </intent-filter>
+        </receiver>
+        <!-- 新浪 -->
+        <activity
+            android:name=".WBShareActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <!-- 微信 -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- qq完整版 -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent100424468" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- 友盟appkey -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="58c944947666131b2f001a05" />
+
+        <activity android:name=".commond.SwipeBackToolBarActivity" />
+        <activity android:name=".main.mine.Account.OrderCash.ProblemDetailActivity" />
+
+        <!-- 接受自定义消息 -->
+        <receiver
+            android:name=".commond.MsgReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" />
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" />
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" />
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" />
+
+                <category android:name="com.example.administrator.myhaicar" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Required  . Enable it you can get statistics data with channel -->
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="developer-default" />
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="0d0f8cde4ac048e7fc5590cc" /> <!-- </>值来自开发者平台取得的AppKey -->
+
+
+        <!-- Required SDK核心功能 -->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="${applicationId}" />
+            </intent-filter>
+        </activity>
+        <!-- Required  SDK核心功能 -->
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false"></service>
+
+        <!-- Required SDK 核心功能 -->
+        <!-- 可配置android:process参数将PushService放在其他进程中 -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+
+        <!-- Required SDK核心功能 -->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" /> <!-- Required  显示通知栏 -->
+                <category android:name="${applicationId}" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Required SDK核心功能 -->
+        <receiver
+            android:name="cn.jpush.android.service.AlarmReceiver"
+            android:exported="false" />
+
+
+    </application>
+
+</manifest>

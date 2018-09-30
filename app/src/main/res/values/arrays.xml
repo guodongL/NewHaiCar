@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="arrImages">
+        <item>@drawable/guide1</item>
+        <item>@drawable/guide2</item>
+        <item>@drawable/guide3</item>
+    </array>
+    <string-array name="arrRedTitles">
+        <item>全部</item>
+        <item>婚车</item>
+        <item>会费</item>
+        <item>红包</item>
+        <item>提现</item>
+        <item>福利</item>
+    </string-array>
+    <string-array name="arrMyOrderTitles">
+        <item>未出行</item>
+        <item>待结束</item>
+    </string-array>
+    <array name="arrCarcolors1day">
+        <item>@drawable/black1</item>
+        <item>@drawable/white1</item>
+        <item>@drawable/red1</item>
+        <item>@drawable/golden1</item>
+    </array>
+    <array name="arrCarcolors1night">
+        <item>@drawable/black1_night</item>
+        <item>@drawable/white1_night</item>
+        <item>@drawable/red1_night</item>
+        <item>@drawable/golden1_night</item>
+    </array>
+    <array name="arrCarcolors2day">
+        <item>@drawable/blue2</item>
+        <item>@drawable/yellow2</item>
+        <item>@drawable/silver2</item>
+        <item>@drawable/gray2</item>
+    </array>
+    <array name="arrCarcolors2night">
+        <item>@drawable/blue2_night</item>
+        <item>@drawable/yellow2_night</item>
+        <item>@drawable/silver2_night</item>
+        <item>@drawable/gray2_night</item>
+    </array>
+    <array name="arrCarcolors3day">
+        <item>@drawable/brown3</item>
+        <item>@drawable/green3</item>
+        <item>@drawable/pink3</item>
+        <item>@drawable/orange3</item>
+    </array>
+    <array name="arrCarcolors3night">
+        <item>@drawable/brown3_night</item>
+        <item>@drawable/green3_night</item>
+        <item>@drawable/pink3_night</item>
+        <item>@drawable/orange3_night</item>
+    </array>
+    <array name="arrColors1">
+        <item>黑</item>
+        <item>白</item>
+        <item>红</item>
+        <item>金</item>
+    </array>
+    <array name="arrColors2">
+        <item>蓝</item>
+        <item>黄</item>
+        <item>银</item>
+        <item>灰</item>
+    </array>
+    <array name="arrColors3">
+        <item>棕</item>
+        <item>绿</item>
+        <item>粉</item>
+        <item>橙</item>
+    </array>
+    <string-array name="arrBusiness">
+        <item>天生吃货</item>
+        <item>黄金珠宝</item>
+        <item>游山玩水</item>
+        <item>精品洗车</item>
+        <item>维修保养</item>
+        <item>嗨玩家</item>
+    </string-array>
+</resources>

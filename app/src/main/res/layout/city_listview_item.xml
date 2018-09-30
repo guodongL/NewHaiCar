@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:tag="skin:line:background">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:tag="skin:line:background">
+    <TextView
+        android:id="@+id/textView_cityBean_listView"
+        android:layout_width="match_parent"
+        android:textSize="16sp"
+        android:tag="skin:textColor2:textColor"
+        android:layout_height="wrap_content"
+        android:text="沈阳"
+        android:layout_marginLeft="15dp"
+        android:textColor="#000"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"/>
+    </LinearLayout>
+</LinearLayout>

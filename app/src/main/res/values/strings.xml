@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">嗨车365</string>
+    <string name="PAY">支付完成后应该做的操作</string>
+    <drawable name="color4">#ffffff</drawable>
+    <drawable name="color5">#000000</drawable>
+    <string name="pay_result_callback_msg" formatted="false">微信支付结果：%s</string>
+    <string name="margen">出车保证金是嗨车365平台上的认证车主在报名接单时，所需要缴纳并授权嗨车365用与处置车主违约责任的赔付资金，是为保证下单用户权益的一笔交易押金，由嗨车365作为第三方保管，报名失败或
+订单交易完成三日内，保证金将返还到您的嗨车账户余额内，您可以随时提现，嗨车365平台不收取任何费用.</string>
+      <string name="share">邀请好友A加入嗨车，好友A绑定您的嗨车ID为推荐人ID并充值成为年VIP，系统会立即为您返还一个大红包，
+    红包金额为88~148区间内随机金额，好友A邀请好友B成为年VIP会员，系统在给A返还一个大红包的同时还会为您返还一个小红包，红包金额为38~68
+    区间内随机金额，心动不如行动，赶快邀请小伙伴，召唤红包雨</string>
+</resources>

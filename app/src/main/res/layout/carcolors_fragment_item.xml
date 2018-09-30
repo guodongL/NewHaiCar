@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/relativeLayout_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/image_car"
+        android:layout_width="140dp"
+        android:layout_height="160dp"
+        android:src="@drawable/white1"
+        android:layout_centerHorizontal="true"
+        />
+    <RadioButton
+        android:id="@+id/radio_button"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:background="@drawable/carcolors_selector"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="130dp"
+        />
+    <TextView
+        android:id="@+id/textView_colors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="黑色"
+        android:textColor="@color/transparent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"/>
+</RelativeLayout>

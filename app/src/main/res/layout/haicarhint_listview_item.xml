@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:tag="skin:line:background">
+<TextView
+    android:id="@+id/textView_hint"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="嗨车提示您"
+    android:tag="skin:textColor17:textColor|skin:line:background"
+    android:textColor="#060606"
+    android:textSize="12sp"
+    android:background="#fff"
+    android:padding="10dp"/>
+</LinearLayout>

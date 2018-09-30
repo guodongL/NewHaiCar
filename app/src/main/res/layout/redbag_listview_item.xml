@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:paddingBottom="15dp">
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+        android:layout_margin="15dp">
+<View
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="#f99d3a"
+    android:tag="skin:background_view3:background"
+   />
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="45dp"
+        android:layout_height="52dp"
+        android:src="@drawable/smallredbag_day"
+        android:layout_marginLeft="30dp"
+        android:tag="skin:smallredbag:src"
+        android:layout_centerVertical="true"/>
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="领取红包"
+           android:textColor="#fff"
+           android:textSize="13sp"
+           android:layout_toRightOf="@+id/image"
+           android:layout_centerVertical="true"
+           android:layout_marginLeft="15dp"/>
+   </RelativeLayout>
+</RelativeLayout>

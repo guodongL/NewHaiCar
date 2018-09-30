@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_transaction"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:tag="skin:background:background"
+    android:background="#eee"
+    tools:context="com.example.administrator.myhaicar.main.mine.Account.Transaction.TransactionActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolBar_myAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:background="@drawable/appbar_day"
+        android:focusableInTouchMode="true"
+        android:tag="skin:appbar:background">
+        <ImageView
+            android:id="@+id/toolBar_back"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="10dp"
+            android:padding="5dp"
+            android:cropToPadding="true"
+            android:src="@drawable/back"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="交易记录"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:layout_gravity="center" />
+    </android.support.v7.widget.Toolbar>
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tablayout_transaction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="62dp"
+        android:background="@drawable/tabdown_day"
+        app:tabTextColor="#5a5858"
+        android:tag="skin:textColor0:tabTextColor|skin:tabdown:background"
+        app:tabSelectedTextColor="@color/bisque"
+        app:tabIndicatorColor="@color/bisque"  >
+    </android.support.design.widget.TabLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/trading_viewPager"
+        android:layout_below="@+id/tablayout_transaction"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+</RelativeLayout>

@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_account"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee"
+    android:tag="skin:background:background"
+    tools:context="com.example.administrator.myhaicar.main.mine.Account.This.Acticity.AccountActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolBar_myAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/appbar_day"
+        android:fitsSystemWindows="true"
+        android:tag="skin:appbar:background"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <ImageView
+            android:id="@+id/toolBar_back"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="10dp"
+            android:padding="5dp"
+            android:cropToPadding="true"
+            android:src="@drawable/back"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的账户"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:layout_gravity="center"
+            />
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="64dp"
+       >
+
+        <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+            android:id="@+id/account_scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageView_backDrop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/myaccount_day"
+                    android:tag="skin:myaccount:src" />
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/image_myHead"
+                    android:layout_width="33dp"
+                    android:layout_height="33dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/headview"
+                    app:actualImageScaleType="centerCrop"
+                    app:roundAsCircle="true" />
+
+                <TextView
+                    android:id="@+id/textView_nameID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_toRightOf="@+id/image_myHead"
+                    android:text="董子健1532"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:id="@+id/line1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView_nameID"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="35dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="余额: ¥ "
+                        android:textColor="#fff"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/textView_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0.00"
+                        android:textColor="#fff"
+                        android:textSize="40sp" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/button_withDraw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_below="@+id/line1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="48dp"
+                    android:background="@drawable/bg_shape_withdraw_day"
+                    android:text="提现"
+                    android:textColor="#fff"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageView_backDrop"
+                    android:background="#fff"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/linear_orderCash"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:tag="skin:line:background">
+
+                        <ImageView
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/carmargin" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="23dp"
+                            android:layout_weight="1"
+                            android:tag="skin:textColor:textColor"
+                            android:text="出车保证金"
+                            android:textColor="#000" />
+
+                        <TextView
+                            android:id="@+id/textView_orderMoney"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="5dp"
+                            android:tag="skin:textColor:textColor"
+                            android:text="3000元"
+                            android:textColor="#000" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="13dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="20dp"
+                            android:src="@drawable/direction_day"
+                            android:tag="skin:direction:src" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#eee"
+                        android:tag="skin:background_view1:background" />
+
+                    <LinearLayout
+                        android:id="@+id/linear_transaction"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:tag="skin:line:background">
+
+                        <ImageView
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/transaction" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="23dp"
+                            android:layout_weight="1"
+                            android:tag="skin:textColor:textColor"
+                            android:text="交易记录"
+                            android:textColor="#000" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="13dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="20dp"
+                            android:src="@drawable/direction_day"
+                            android:tag="skin:direction:src" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#eee"
+                        android:tag="skin:background_view1:background" />
+
+                    <LinearLayout
+                        android:id="@+id/linear_redBag"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:tag="skin:line:background">
+
+                        <ImageView
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/redpacket" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="23dp"
+                            android:layout_weight="1"
+                            android:tag="skin:textColor:textColor"
+                            android:text="红包"
+                            android:textColor="#000" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="13dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="20dp"
+                            android:src="@drawable/direction_day"
+                            android:tag="skin:direction:src" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#eee"
+                        android:tag="skin:background_view1:background" />
+
+                    <LinearLayout
+                        android:id="@+id/linear_openVIP"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:tag="skin:line:background">
+
+                        <ImageView
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/vip" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="23dp"
+                            android:layout_weight="1"
+                            android:tag="skin:textColor:textColor"
+                            android:text="VIP"
+                            android:textColor="#000" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="5dp"
+                            android:tag="skin:textColor:textColor"
+                            android:text="开通VIP"
+                            android:textColor="#000" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="13dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="20dp"
+                            android:src="@drawable/direction_day"
+                            android:tag="skin:direction:src" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#eee"
+                        android:tag="skin:background_view1:background" />
+
+                    <LinearLayout
+                        android:id="@+id/linear_mineDetail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:tag="skin:line:background">
+
+                        <ImageView
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/personal" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="23dp"
+                            android:layout_weight="1"
+                            android:tag="skin:textColor:textColor"
+                            android:text="个人资料"
+                            android:textColor="#000" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="13dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="20dp"
+                            android:src="@drawable/direction_day"
+                            android:tag="skin:direction:src" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#eee"
+                        android:tag="skin:background_view1:background" />
+                </LinearLayout>
+            </RelativeLayout>
+        </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+
+    </LinearLayout>
+</RelativeLayout>
